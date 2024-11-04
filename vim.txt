@@ -1,0 +1,49 @@
+
+i = insert mode
+esc = exit mode
+: = last-line mode
+:q = quit
+:q! = quit no save
+:w = write
+:ZZ = quit and save
+
+i,j,k,l = move cursor, optional preface with number
+0 = to beginning of the line
+$ = to end of the line
+gg = to beginning of the file
+G = to end of the file
+`. = to last edit
+
+d = delete operation
+d0 = delete to the beginning of a line
+d$ = delete to the end of a line
+dgg = delete to the beginning of the file
+dG = delete to the end of the file
+u = undo the last operation
+Ctrl-r = redo the last undo
+dd = delete line
+
+/text = going forward
+n = move the cursor to the next
+N = move the cursor to the previous
+?text = going backwards.
+:%s/text/replacement text/g = search replace
+:%s/text/replacement text/gc search replace confirm
+/ or ? then n = search, next
+
+v = highlight char
+V = highlight line
+Ctrl-v = highlight col
+p = paste after line
+P = paste on line
+y =copy
+
+Ctrl-p - auto complete prev
+Ctrl-n - auto complete next
+
+
+Ctrl-w (h,k,j,l,Ctrl-w) = change viewport
+Ctrl-w (r,R) = rotate viewports
+Ctrl-w c = close viewport
+:split file
+Ctrl-w (s,v) = split viewport
